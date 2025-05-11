@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>Library Management System</h1>
+
+  <section id="book-controls">
+    <h2>Filter & Sort Books</h2>
+    <select id="genreFilter">
+      <option value="">All Genres</option>
+      <option value="Science Fiction">Science Fiction</option>
+      <option value="Dystopian">Dystopian</option>
+    </select>
+
+    <select id="availabilityFilter">
+      <option value="">All Availability</option>
+      <option value="true">Available</option>
+      <option value="false">Unavailable</option>
+    </select>
+
+    <select id="sortBooks">
+      <option value="">Sort By</option>
+      <option value="title">Title</option>
+      <option value="author">Author</option>
+      <option value="publishedYear">Published Year</option>
+    </select>
+
+    <select id="booksPerPage">
+      <option value="5">5 per page</option>
+      <option value="10">10 per page</option>
+    </select>
+
+    <button onclick="prevPage()">Previous</button>
+    <button onclick="nextPage()">Next</button>
+  </section>
+
+  <section id="book-list">
+    <h2>Books</h2>
+    <div id="booksContainer"></div>
+  </section>
     <script src="script.js"></script>
 </body>
 </html>
