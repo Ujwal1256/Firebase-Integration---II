@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple UI for Display novels List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <h1>Novel Listing</h1>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search by title or author" />
+
+    <label for="yearFilter">Release Year:</label>
+    <select id="yearFilter">
+      <option value="">All</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+    </select>
+
+    <label for="sortPrice">Sort by Price:</label>
+    <select id="sortPrice">
+      <option value="">None</option>
+      <option value="asc">Low to High</option>
+      <option value="desc">High to Low</option>
+    </select>
+  </div>
+
+  <div id="novelList"></div>
+  <script type="module" src="script.js"></script>
+
+</body>
+</html>
